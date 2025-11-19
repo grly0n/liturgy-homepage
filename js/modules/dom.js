@@ -2,6 +2,7 @@ import { getCelebration } from "./api.js"
 
 
 export function displayData(data) {
+  console.log(`Displaying data for ${data['date']}`)
   const dataPane = document.querySelector('.data')
   const celebrationInfo = document.querySelector('.celebrations')
   const celebration = getCelebration(data['celebrations'])
