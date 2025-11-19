@@ -1,0 +1,32 @@
+* {
+  color: blue;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: lightblue;
+  padding: 20px 50px;
+  margin: 10px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+button {
+  font-size: 15px;
+  border: solid blue;
+  margin: 10px 10px;
+  padding: 5px 7px;
+  border-radius: 7px;
+}
+
+.data {
+  background-color: rgb(175, 175, 175);
+  border: solid blue;
+  border-radius: 7px;
+  margin-top: 10px;
+  padding: 10px;
+}
