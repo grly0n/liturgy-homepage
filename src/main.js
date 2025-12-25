@@ -1,5 +1,5 @@
 import { getAPIData } from "./modules/api.js"
-import { displayData, clearData, createDayTile, displayDataWeek } from "./modules/dom.js"
+import { clearData, createDayTile, displayDataList } from "./modules/dom.js"
 
 
 const button1 = document.querySelector('.today')
@@ -45,8 +45,7 @@ button4.addEventListener('click', async function (e) {
     let data = await getAPIData(currentDay)
     weekData.push(data)
   }
-  // console.log(weekData.length)
-  displayDataWeek(weekData)
+  displayDataList(weekData)
 })
 
 // Next month (including today)
@@ -62,5 +61,5 @@ button5.addEventListener('click', async function (e) {
     monthData.push(data)
   }
 
-  displayDataWeek(monthData)
+  displayDataList(monthData)
 })
