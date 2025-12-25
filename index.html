@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liturgical Homepage</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
   </head>
   <body>
     <main>
@@ -14,14 +14,20 @@
         This is the future Liturgy Homepage. Below will be today's liturgy /
         feasts / season etc.
       </p>
-      <button class="today">Get today</button>
-      <button class="tomorrow">Get tomorrow</button>
-      <button class="yesterday">Get yesterday</button>
+      <section class="button-row-1">
+        <button class="today">Get today</button>
+        <button class="tomorrow">Get tomorrow</button>
+        <button class="yesterday">Get yesterday</button>
+      </section>
+      <section class="button-row-2">
+        <button class="week">Get next week</button>
+        <button class="month">Get next month</button>
+      </section>
       <div class="data">
-        <p class="celebrations"></p>
+        <!-- <p class="celebrations"></p>
         <p class="weekday"></p>
         <p class="weeknum"></p>
-        <p class="season"></p>
+        <p class="season"></p> -->
       </div>
     </main>
   </body>
